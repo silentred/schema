@@ -145,7 +145,7 @@ func encodeUint(v reflect.Value) string {
 }
 
 func encodeFloat(v reflect.Value, bits int) string {
-	return strconv.FormatFloat(v.Float(), 'f', 6, bits)
+	return strconv.FormatFloat(v.Float(), 'f', -1, bits)
 }
 
 func encodeFloat32(v reflect.Value) string {
